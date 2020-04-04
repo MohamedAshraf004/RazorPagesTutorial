@@ -24,7 +24,7 @@ namespace RazorPagesTutorial.Pages.Employees
             this.webHostEnvironment = webHostEnvironment;
         }
 
-        [BindProperty]
+        [BindProperty] //by default support post only SupportsGet=true to make it support get also 
         public Employee Employee { get; set; }
 
         [BindProperty]
